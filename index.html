@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Reto-2-Frontend</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</head>
+<body>		
+	<button href="" class="anuncio" id="btn-init">Inicia el Curso Frontend Reto 2</button>
+	
+	<div class="contenido">
+		
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>Menu</h3>
+			<a href="#cl1" class="item">Hide, Show, Toogle</a>
+			<a href="#cl2" class="item">Click, DblClick</a>
+			<a href="#cl3" class="item">MouseLeave, MouseEnter, Hover</a>			
+			<a href="#cl5" class="item">Focus, Blur</a>
+			<a href="#cl6" class="item">FadeIn, FadeOut, FadeToogle, FadeTo</a>
+			<a href="#cl7" class="item">SlideDown, SlideUp, SlideToggle</a>
+			<a href="#cl8" class="item">Animate, Stop</a>
+			<a href="#cl9" class="item">Text, Html, Val, Attr</a>
+			<a href="#cl10" class="item">Append, Remove</a>
+			<a href="#cl11" class="item">CSS</a>
+			<a href="#cl12" class="item">Parent, Children</a>
+		</nav>
+		<div class="clases">		
+			
+			<div class="active" id="cl1">
+				<div class="title">Hide, Show, Toogle</div>
+				<br>
+				<div class="metodo">hide() : El método hide() oculta elementos.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').hide();</div>
+				<br>
+				<div class="metodo">show() : El método show() muestra elementos.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').show();</div>
+				<br>
+				<div class="box">
+					<span id="text-hide">Ocultame -> </span>
+					<button id="evt-hide">Hide()</button><br>
+					<br>
+					<span id="text-show" style="display: none;">Me revelaste -></span>
+					<button id="evt-show">Show()</button><br>
+					<br>
+					<span id="text-toogle">Presioname 2 veces -> </span>
+					<button id="evt-toogle">Toogle()</button>
+					
+				</div>
+			</div>
+			<div class="" id="cl2">
+				<div class="title">Click, DblClick</div>
+				<br>
+				<div class="metodo">click() : Define un evento al momento de hacer click.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').click(function(){});</div>
+				<br>
+				<div class="metodo">dblclick() : Define evento al momento de hacer doble click.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').dblclick(function(){});</div>
+				<br>
+				<div class="box">
+					
+					<button id="evt-click">Click()</button>
+					<br><br>
+					<button id="evt-dblclick">dblClick()</button>
+					<br>
+				</div>
+			</div>
+			<div class="" id="cl3">
+				<div class="title">MouseLeave, MouseEnter, Hover</div><br>
+				<div class="metodo">mouseleave() : Define evento al momento en que el puntero del mouse deja la ubicacion del elemento.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').mouseleave(function(){});</div>
+				<br>				
+				<div class="metodo">mouseenter() : Define evento al momento en que el puntero del mouse ingresa a la ubicacion del elemento.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').mouseenter(function(){});</div>
+				<br>
+				<div class="metodo">hover() : Permite definir los eventos mouseenter y mouseleave en una sola funcion.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').hover(function(){});</div>
+				<br>
+				<div class="box">
+					<img id="evt-enter-leave" src="assets/img/avatar.jpg"><br><br>
+					<div id="enter-leave"></div>
+				</div>
+			</div>			
+			<div class="" id="cl5">
+				<div class="title">Focus, Blur</div><br>
+				<div class="metodo">focus() : El evento focus se activa cuando se ingresa con el puntero del mouse a un campo del formulario.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').focus(function(){});</div>
+				<br>
+				<div class="metodo">blur() : El evento blur se activa cuando se deja el campo.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').blur(function(){});</div>
+				<br>
+				<div class="box">
+					<input type="text" id="evt-focus-blur">					
+				</div>
+			</div>
+			<div class="" id="cl6">
+				<div class="title">FadeIn, FadeOut, FadeToogle, FadeTo</div><br>
+				<div class="metodo">fadeIn() : Método para descolorar un elemento. </div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').fadeIn(speed);</div>
+				<br>
+				<div class="metodo">fadeOut() : Método para colorear un elemento.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').fadeOut(speed);</div>
+				<br>
+				<div class="metodo">fadeToggle() : Alterna entre los métodos fadeIn() y fadeOut(). </div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').fadeToogle(speed);</div>
+				<br>
+				<div class="metodo">fadeTo() : Método para controlar la opacidad de un elemento siguiendo un parametro de referencia.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').fadeTo(speed, opacity);</div>
+				<br>
+				<div class="box">
+					<button id="evt-fade">Click para probar fadeIn() en las cajas.</button>
+					<br><br>
+					<div id="div1" style="width:80px;height:80px;display:none;background:red;color:#fff;">caja 1</div><br>
+					<div id="div2" style="width:80px;height:80px;background:green;color:#fff;">caja 2</div><br>
+					<div id="div3" style="width:80px;height:80px;display:none;background:blue;color:#fff;">caja 3</div>
+					<div id="div4" style="width:80px;height:80px;display:none;background:pink;color:#fff;">caja 4</div>
+				</div>
+			</div>
+			<div class="" id="cl7">
+				<div class="title">SlideDown, SlideUp, SlideToggle</div><br>
+				<div class="metodo">slideDown() : Método para desliza hacia abajo un elemento. </div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').slideDown(speed);</div>
+				<br>
+				<div class="metodo">slideUp() : Método para deslizar hacia arriba un elemento. </div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').slideUp(speed);</div>
+				<br>
+				<div class="metodo">slideToggle() : Alterna entre los métodos slideDown() y slideUp()</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').slideToggle(speed);</div>
+				<br>
+				<div class="box">
+					<div id="evt-slide-toggle">Click para aplicar slideUp() y slideDown() al panel</div>
+					<div id="panel">Hola mundo</div>
+				</div>
+			</div>
+			<div class="" id="cl8">
+				<div class="title">Animate, Stop</div><br>
+				<div class="metodo">Animate() : El método hide() realizar una animación personalizada de un conjunto de propiedades de CSS.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').animate({param1: value1, param2: value2}, speed);</div>
+				<br>
+				<div class="metodo">stop() : detiene una animacion en curso.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').hide();</div>
+				<br>
+				<div class="box">
+					<button id="evt-animate">Animate()</button><br><br>
+					<button id="evt-stop">Stop()</button><br><br>
+					<div id="block-animate" style="background-color: #bca;width: 100px;border: 1px solid green;">Hola Animacion!</div>
+				</div>
+			</div>
+			<div class="" id="cl9">
+				<div class="title">Text, Html, Val, Attr</div><br>
+				<div class="metodo">text() : Obtener el texto con el método text().</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').text();</div>
+				<br>
+				<div class="metodo">html() : Obtener el html con el método html().</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').html();</div>
+				<br>
+				<div class="metodo">val() : Obtener el valor de un campo de formulario con el método val().</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').val();</div>
+				<br>
+				<div class="metodo">attr() : Obtener el valor de un atributo con el método attr().</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').attr('attr');</div>
+				<br>
+				<div class="box">
+					<div id="text-html"><div>TEXTO</div></div>
+					<button id="evt-text">text()</button><button id="evt-html">html()</button>
+					<br>
+					<input type="text" value="Value" id="input-id"><br>
+					<button id="evt-val">val()</button><button id="evt-attr">attr()</button>
+				</div>
+			</div>
+			<div class="" id="cl10">
+				<div class="title">Append, Remove</div><br>
+				<div class="metodo">append() : El método append() agrega elementos html.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').append();</div>
+				<br>
+				<div class="metodo">remove() : El método remove() remueve elementos html.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').remove();</div>
+				<br>
+				<div class="box">
+					<button id="evt-append">Append()</button>
+					<button id="evt-remove">Remove()</button>
+					<div id="text-app-rem"></div>
+				</div>
+			</div>
+			<div class="" id="cl11">
+				<div class="title">CSS</div><br>
+				<div class="metodo">css() : Obtener las propiedades de estilo calculados para el primer elemento en el conjunto de los elementos coincidentes.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').css('property', 'value');</div>
+				<br>				
+				<div class="box">
+					<div id="css-text">Aplicame CSS</div><br>
+					<button id="evt-css">CSS()</button>
+				</div>
+			</div>
+			<div class="" id="cl12">
+				<div class="title">Parent, Children</div><br>
+				<div class="metodo">parent() : Obtener el padre de cada elemento en el conjunto actual de los elementos coincidentes, opcionalmente filtradas por un selector.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').parent();</div>
+				<br>
+				<div class="metodo">children () : Obtener los hijos de cada elemento en el conjunto de elementos coincidentes, opcionalmente filtradas por un selector.</div>
+				<br>
+				<div class="sintaxis">Sintaxis: $('selector').children();</div>
+				<br>
+				<div class="box">
+					<div id="padre" data-text="padre">
+						<button id="evt-children">Children()</button>
+						<br><br>
+						<div id="hijo" data-text="hijo">
+							<button id="evt-parent">Parent()</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">RETO 2 FRONTEND CORE UPGRADE</div>
+
+
+
+
+
+</body>
+</html>

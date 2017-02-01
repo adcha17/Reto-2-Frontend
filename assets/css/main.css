@@ -1,0 +1,130 @@
+#html{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	/*centrado horizontal*/
+	justify-content: center;
+	/*centrado vertical*/
+	align-items: center;
+
+}
+body{
+	background: #556370;
+	margin: 0px;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+.anuncio{
+	margin-top: auto;
+	height: 120px;
+	width: 120px;
+	border: 1px solid transparent;
+	
+	background: #c7f465;
+	cursor: pointer;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.contenido{
+	display: none;	
+}
+
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #c7f465;
+	position: fixed;
+}
+
+.cbp-spmenu h3 {
+	color: #ff6b6b;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #4bcdc3;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #ff6b6b;
+	font-size: 1.1em;
+	font-weight: 300;
+	text-decoration:none;
+}
+
+.cbp-spmenu a:hover {
+	background: #258ecd;
+}
+
+.cbp-spmenu a:active {
+	background: #afdefa;
+	color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-vertical {
+	width: 10%;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #258ecd;
+	padding: 1em;
+}
+.clases{
+	padding: 175px;
+	box-sizing: border-box;
+	margin-left: 10%;
+	width: 90%;
+	/*margin-top: 100px;*/
+
+}
+.clases>div{
+
+	display: none;
+	
+}
+.clases .active{
+	display: inline;
+}
+.clases .active>div{
+	margin-right: 100px;
+	margin-left: 100px;
+}
+.title{
+	color: #ff6b6b;
+	font-size: 40px;
+}
+.metodo{
+	color:  #DC9656;
+}
+.sintaxis{
+	text-indent: 100px;
+	color:  #F7CA88;
+}
+.box{
+
+	width: 70%;
+	padding: 40px;
+	box-sizing: border-box;
+	background: white;
+}
+#panel,#evt-slide-toggle
+{
+padding:5px;
+text-align:center;
+background-color:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+#panel
+{
+padding:50px;
+display:none;
+}
+.footer{
+	text-align: right;
+	color: #BA8BAF;	
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
